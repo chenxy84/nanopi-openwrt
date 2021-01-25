@@ -5,15 +5,15 @@ on:
     branches: [ master ]
     paths:
       - '.github/workflows/r1s_lean.yml'
-  schedule:
-    - cron: '10 10 */4 * *'
+  # schedule:
+    # - cron: '10 10 */4 * *'
 
 jobs:
 
   build:
 
     runs-on: ubuntu-latest
-    if: github.repository == 'klever1988/nanopi-openwrt'
+    if: github.repository == 'chenxy84/nanopi-openwrt'
 
     steps:
 
